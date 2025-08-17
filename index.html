@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nibuy - Login</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Nibuy - Login</h1>
+  </header>
+
+  <main>
+    <section id="login-section">
+      <h2>Entrar</h2>
+
+      <input type="email" id="email" placeholder="Digite seu email">
+      <input type="password" id="senha" placeholder="Digite sua senha">
+
+      <button id="login-btn">Entrar</button>
+      <p id="erro" class="erro-msg"></p>
+
+      <div class="ou">ou</div>
+
+      <button id="google-login" class="btn-google">Entrar com Google</button>
+
+      <p class="criar">Não tem conta? <a href="#" id="abrirCadastro">Criar Conta</a></p>
+    </section>
+  </main>
+
+  <!-- Popup criar conta -->
+  <div id="popupCadastro" class="popup">
+    <div class="popup-content">
+      <h2>Criar Conta</h2>
+      <input type="email" id="cad-email" placeholder="Digite seu email">
+      <input type="password" id="cad-senha" placeholder="Digite sua senha">
+      <button id="cad-btn">Cadastrar</button>
+      <p id="cad-erro" class="erro-msg"></p>
+      <button id="fecharPopup" class="btn-fechar">Fechar</button>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
